@@ -1,1 +1,344 @@
-/* место для вашего кода */
+/* ===== ШАПКА ===== */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 24px;
+}
+
+.header_menu {
+  justify-self: start;
+}
+
+.header_links_list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+  padding: 0;
+  margin: 0;
+}
+
+.header_links_list_item {
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px;
+}
+
+.header_links_list_item_no_bullit {
+  list-style: none;
+}
+
+.header_link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.header_link_active {
+  text-decoration: none;
+}
+
+.header_logo {
+  justify-self: center;
+}
+
+.header_logo_image {
+  display: block;
+  min-width: 129.11px;
+  min-height: 104.65px;
+
+}
+
+/* общий адрес (и в шапке, и в подвале) */
+.address {
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header_address {
+  justify-self: end;
+}
+
+.address_link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.address_text {
+  margin: 0;
+}
+
+/* ===== КОВЕР ===== */
+
+.cover {
+  position: relative;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-transform: uppercase;
+  min-height: 757px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.cover_title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 165px 50px 147px;
+  position: relative;
+  z-index: 1;
+}
+/* 
+ужасная разметка, которую я переделываю 
+пятый раз, потому что она не хочет совпадать
+ */
+.cover_text {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.cover_text_left {
+  align-self: flex-start;
+}
+
+.cover_text_center {
+  align-self: center;
+}
+
+.cover_text_right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+
+.cover_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 55px 78px;
+  gap: 79px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover_description_text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 18px;
+}
+
+.bet_button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* ===== ЛОТЫ ===== */
+
+.lots {
+   max-width: 1052px;
+  padding: 179px 24px 0;
+  margin: 0 auto;
+}
+
+.lots_heading {
+  margin: 0 0 26px 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lots_card_list {
+  display: flex;
+  
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0; 
+}
+
+.lots_card_list_item {
+  max-width: 334px;
+  flex: 0 0 334px; 
+  min-height: 563px;
+}
+
+.card_link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 51px 40px 48px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.card_title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  z-index: 2;
+}
+
+.card_text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  z-index: 2;
+}
+
+.lots_look_more_link {
+  display: block;
+  margin: 30px 0 0 64px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-underline-offset: 3px;
+  z-index: 2;
+}
+
+/* ===== OБ АУКЦИОНЕ ===== */
+
+.about {
+  margin-top: 148px;
+  padding: 0 24px 0;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+}
+
+.about_column {
+  display: flex;
+}
+
+.about_logo {
+  justify-self: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_logo_image {
+  width: 148px;
+  height: 114px;
+}
+
+.about_column_content {
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 24px;
+}
+
+.about_title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 180px 50px 88px;
+  column-gap: 140px;
+  align-items: flex-start;
+}
+
+.footer_address {
+  padding-left: 0;
+}
+
+.footer_menu_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer_menu_link {
+  color: #000;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer_menu_link_active {
+  text-decoration: none;
+}
+
+.footer_social_list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_social_icon {
+  width: 48px;
+  height: 48px;
+}
