@@ -90,7 +90,7 @@
   background-position: center;
   color: #fff;
   text-transform: uppercase;
-  height: 757px;
+  min-height: 757px;
   padding: 165px 50px 50px;
   margin-bottom: 185px;
 }
